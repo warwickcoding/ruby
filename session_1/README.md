@@ -1,12 +1,12 @@
 ## Ruby Course Session 1
 
 Session Content:
-[Intro][1]
-[History][2]
-[Setting up environment][3]
-[The Command Line][4]
-[The IDE][5]
-[Exercises][6]
+- [Intro][1]
+- [History][2]
+- [Setting up environment][3]
+- [The Command Line][4]
+- [The IDE][5]
+- [Exercises][6]
 
 ###Welcome to the world of Ruby!
 
