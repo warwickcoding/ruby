@@ -1,11 +1,16 @@
 ## Ruby Course Session 1
 
-
-----------
+Session Content:
+[Intro][1]
+[History][2]
+[Setting up environment][3]
+[The Command Line][4]
+[The IDE][5]
+[Exercises][6]
 
 ###Welcome to the world of Ruby!
 
-You might have heard quite a bit about the language or the ever-so-famous [Ruby on Rails][1] framework that was built with Ruby.
+You might have heard quite a bit about the language or the ever-so-famous [Ruby on Rails][7] framework that was built with Ruby.
 
 In this session, we will be setting up your development environment in order to get started with programming in Ruby.
 
@@ -38,8 +43,8 @@ And for you eager ones that are wondering, Ruby was written in C.
 ###Let's get started!
 
 1. Install/use Google Chrome as the default web browser for this course
-2. Create an account on [Github][2]
-2. Sign up for an account on [Koding][3] **with your Github account**
+2. Create an account on [Github][8]
+2. Sign up for an account on [Koding][9] **with your Github account**
 3. While we wait, we'll talk a bit about why we're using Koding and why a *nix based Operating system
 4. When the registration is done, Turn on the Virtual Machine.![Alt text](../images/Screen Shot 2015-12-29 at 13.28.54.png)
 5. You should arrive to a screen similar to this![Alt text](../images/Screen Shot 2015-12-28 at 23.23.00.png)
@@ -116,8 +121,8 @@ In this case we have to add a new option to the mix and use `rm` instead of `rmd
 The -r means that it should delete all files and folders inside the projects2 as well as itself.
 
 **Further work/reading:**
-- IMPORTANT! [Code Academy Course on the Command Line][5]
-- [Funny command line tricks][6]
+- IMPORTANT! [Code Academy Course on the Command Line][11]
+- [Funny command line tricks][12]
 
 ---
 ###The IDE
@@ -155,9 +160,15 @@ Delete the file `test.txt`
 ####Exercise 4
 Try to find how to rename a file or directory on a bash shell.
 
-  [1]: https://en.wikipedia.org/wiki/Ruby_on_Rails
-  [2]: www.github.com
-  [3]: www.koding.com
-  [4]: https://en.wikipedia.org/wiki/Command-line_interface#Operating_system_command-line_interfaces
-  [5]: https://www.codecademy.com/learn/learn-the-command-line
-  [6]: http://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/
+  [1]: https://github.com/warwickcoding/ruby/tree/master/session_1#welcome-to-the-world-of-ruby
+  [2]: https://github.com/warwickcoding/ruby/tree/master/session_1#ruby-history
+  [3]: https://github.com/warwickcoding/ruby/tree/master/session_1#lets-get-started
+  [4]: https://github.com/warwickcoding/ruby/tree/master/session_1#the-command-line
+  [5]: https://github.com/warwickcoding/ruby/tree/master/session_1#the-ide
+  [6]: https://github.com/warwickcoding/ruby/tree/master/session_1#exercises
+  [7]: https://en.wikipedia.org/wiki/Ruby_on_Rails
+  [8]: www.github.com
+  [9]: www.koding.com
+  [10]: https://en.wikipedia.org/wiki/Command-line_interface#Operating_system_command-line_interfaces
+  [11]: https://www.codecademy.com/learn/learn-the-command-line
+  [12]: http://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/
