@@ -8,19 +8,20 @@ Session Content:
 - [The IDE][5]
 - [Exercises][6]
 
-###Welcome to the world of Ruby!
+Welcome to the world of Ruby!
+-----------------------------
 
 You might have heard quite a bit about the language or the ever-so-famous [Ruby on Rails][7] framework that was built with Ruby.
 
 In this session, we will be setting up your development environment in order to get started with programming in Ruby.
 
-If you are familiar with HTML, CSS or even JavaScript, you might not have done steps that we will do in a bit. The reason is that we have to have Ruby installed on out machine in order to be able to use it.
+If you are familiar with HTML, CSS or even JavaScript, you might not have done steps that we will do. The reason is that we have to install Ruby on our machine in order to be able to program with it.
 
-For simplicity and reliability, we will be using a Virtual Machine that has Ruby installed on it. This is because people on this course will be using different operating systems and that will probably cause us some delays in setting up each environment. However, if you would like to set up Ruby locally, please feel free to approach me and I'll point you in the right direction.
+For simplicity and reliability, we will be using a Virtual Machine that has Ruby installed on it. This is because people on this course will be using different operating systems and that will probably cause us some delays in setting up each environment. However, if you would like to set up Ruby locally on your machine, please feel free to approach me and I'll point you in the right direction.
 
-----------
 
-###Ruby History
+Ruby History
+------------
 
 I guess it is the right time to ask what is Ruby :P
 
@@ -36,28 +37,28 @@ Another interesting point that should be noted, Ruby was designed for programmer
 
 > I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. That is the primary purpose of Ruby language.
 
-And for you eager ones that are wondering, Ruby was written in C.
+And for you eager ones that are wondering, Ruby was written in the C language.
 
-----------
 
-###Let's get started!
+Let's get started!
+------------------
 
-1. Install/use Google Chrome as the default web browser for this course
-2. Create an account on [Github][8]
+1. Install/Use Google Chrome as the default web browser for this course (Consistency)
+2. Create an account on [Github][8] (I'll explain why later)
 2. Sign up for an account on [Koding][9] **with your Github account**
-3. While we wait, we'll talk a bit about why we're using Koding and why a *nix based Operating system
+3. While we wait, we'll talk a bit about why we're using Koding and why a `*nix` based Operating system
 4. When the registration is done, Turn on the Virtual Machine.![Alt text](../images/Screen Shot 2015-12-29 at 13.28.54.png)
 5. You should arrive to a screen similar to this![Alt text](../images/Screen Shot 2015-12-28 at 23.23.00.png)
 
 6. Now we want to check if Ruby is installed on the VM so we wil type `ruby -v` into the open terminal tab.![Alt text](../images/Screen Shot 2015-12-28 at 23.25.26.png)
 
 7. We want to use a newer version than 1.9. to do that, we will need to install it using the built in Koding Package Manager. On the same terminal window, type in `kpm install ruby2` and wait for a few seconds.![Alt text](../images/Screen Shot 2015-12-28 at 23.32.37.png)
-8. After the installer has finished, type in `ruby -v` again and this time you should read ruby 2.0.0, Great!!
+8. After the installer has finished, type in `ruby -v` again and this time you should read `ruby 2.0.0`, Great!!
 9. Now we are ready to get started with the command line.
 
-----------
 
-###The Command Line
+The Command Line
+----------------
 The command line is an interface for typing commands directly to a computer's operating system. Every single operating system has some way of accessing the command line. Up until the Graphical User Interface (GUI) was officially introduced in 1973, the only way to use a computer was through the Command Line Interpreter (CLI).
 
 We will be learning how to use a Unix based command line shell called Bash for this course. You can read more on the different types of command lines interpreters [here][4]
@@ -74,6 +75,7 @@ If we want to see all the files/folders, include the ones that begin with a dot,
 
 ####Current directory
 If we want to make sure that we are in the correct directory, we would use the print working directory command, `pwd`.![Alt text](../images/Screen Shot 2015-12-28 at 23.59.37.png)
+
 The output shows us exactly where we are starting from the root directory on the computer. To understand how the paths work, you could compare them to creating a folder on your Desktop called work and inside work you create a word document called november-statements. The path for this word document will look like this: `~/Desktop/work/november-statements.docx`.
 
 The tilde `~` means this is the Home directory for the computer.
@@ -81,7 +83,7 @@ The tilde `~` means this is the Home directory for the computer.
 ####Changing directories
 What if I wanted to move into another directory other than `/home/zlahham`. This is where the `cd` command comes into play.
 
-If I want to go into the Web folder that was alredy there when I started the VM, I would type `cd Web` and in order to see what's inside that directory, I would type in `ls`![Alt text](../images/Screen Shot 2015-12-29 at 00.11.24.png).
+If I want to go into the Web folder that was already there when I started the VM, I would type `cd Web` and in order to see what's inside that directory, I would type in `ls`![Alt text](../images/Screen Shot 2015-12-29 at 00.11.24.png).
 
 But hey, what if this is not the directory that I'm looking for, how do I go back up to the previous one?
 The command would also involve using `cd` but this this we are adding a new parameter `cd ..` The two dots here imply that we want to move up a directory or in other words, go to the parent directory.
@@ -124,8 +126,8 @@ The -r means that it should delete all files and folders inside the projects2 as
 - IMPORTANT! [Code Academy Course on the Command Line][11]
 - [Funny command line tricks][12]
 
----
-###The IDE
+The IDE
+-------
 By now we have been introduced to the command line. It's high time to take a look at what an IDE is and understand the components that make it whole.
 An IDE is an Integrated Development Environment. What that means is that it is a program that has three main parts:
 - A terminal (green rectangle)
@@ -138,9 +140,9 @@ We need the terminal to run the ruby programs that we are going to be writing. W
 
 You might have used or heard of other text editors such as Sublime Text, Atom or vim. The reason we will avoid them for this course is to keep everyone on the same development environment.
 
----
 
-###Exercises
+Exercises
+---------
 
 We will attempt a few basic exercises in order to utilise the command line and be able to use it properly for the rest of the course.
 
