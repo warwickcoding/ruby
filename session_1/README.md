@@ -83,7 +83,7 @@ The tilde `~` means this is the Home directory for the computer.
 ####Changing directories
 What if I wanted to move into another directory other than `/home/zlahham`. This is where the `cd` command comes into play.
 
-If I want to go into the Web folder that was already there when I started the VM, I would type `cd Web` and in order to see what's inside that directory, I would type in `ls`![Alt text](../images/Screen Shot 2015-12-29 at 00.11.24.png).
+If I want to go into the Web folder that was already there when I started the VM, I would type `cd Web` and in order to see what's inside that directory, I would type in `ls`![Alt text](../images/Screen Shot 2015-12-29 at 00.11.24.png)
 
 But hey, what if this is not the directory that I'm looking for, how do I go back up to the previous one?
 The command would also involve using `cd` but this this we are adding a new parameter `cd ..` The two dots here imply that we want to move up a directory or in other words, go to the parent directory.
@@ -91,7 +91,8 @@ The command would also involve using `cd` but this this we are adding a new para
 ####Creating files
 It's probably a great time now to make sure that we are clear on the difference between a file and a folder/directory. Files can range from word documents to images, while folders/directories are the actual structures that hold these files in place. It is similar to the actual physical folders that hold paper files inside them.
 
-In this case we want to create an empty file with no extension, we would type in `touch my_first_file`. Touch creates the file into the given directory ![Alt text](../images/Screen Shot 2015-12-29 at 00.24.41.png)
+In this case we want to create an empty file with no extension, we would type in `touch my_first_file`. Touch creates the file into the given directory. We can check that the file was created by typing in `ls` to see if the new file is there ![Alt text](../images/Screen Shot 2015-12-29 at 00.24.41.png)
+
 
 ####Creating folders/directories
 Now we want to create a folder that will enclose all of our files for the rest of the course. To do so, we have to make sure that we are inside the right directory first of all, by `pwd`, then we type in `mkdir projects`.
@@ -110,7 +111,10 @@ Notice the difference between removing files and directories?
 
 ####Removing non-empty folders/directories
 Okay, lets do the following:
-`mkdir projects2` `cd projects2` `touch my_second_file` `cd ..`
+- `mkdir projects2`
+- `cd projects2`
+- `touch my_second_file`
+- `cd ..`
 
 So now we have created a directory, moved into it, created a new file and then finally moved back up to the parent directory.
 
@@ -154,7 +158,7 @@ Inside the newly created warwickCoding directory, create a new directory called 
 ####Exercise 2
 Inside the `ruby_course` directory create a directory named `session_1`
 
-Inside `session_1`, create a file and name it test.txt
+Inside `session_1`, create a file and name it `test.txt`
 
 ####Exercise 3
 Delete the file `test.txt`
