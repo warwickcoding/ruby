@@ -9,8 +9,8 @@ Session Outline:
 - Intro to the syntax
 - Ruby Style
 
-###Recap of Session 1
----------------------
+Recap of Session 1
+------------------
 In the last session we got introduced to the command line and we learned how to use the most commonly used commands such as `ls` `pwd` `cd` etc...
 
 The reason why we learned how to operate the command line first before diving into Ruby is because it would make more sense to do everything through the command line and not through Finder or File Explorer as a programmer.
@@ -18,8 +18,8 @@ The reason why we learned how to operate the command line first before diving in
 This is all good practice for later on if you want to keep coding.
 
 
-###Ruby, `ruby` and RUBY
-------------------------
+Ruby, `ruby` and RUBY
+---------------------
 You will come across three variations of the same word, and it's important to know the difference especially when you are reading about a certain issue online.
 
 Ruby is the language.
@@ -29,8 +29,8 @@ Ruby is the language.
 RUBY on the other had does not exist! Some people make the mistake of thinking that Ruby is an acronym for something else. The mixup is because the relate it to other acronym named languages such as BASIC (Beginner's All-purpose Symbolic Instruction Code).
 
 
-###Interactive Ruby Shell (irb)
--------------------------------
+Interactive Ruby Shell (irb)
+----------------------------
 This is one of the libraries that come built in with the Ruby language. The program is launched from a command line and allows the execution of Ruby commands with immediate response, experimenting in real-time. We can try to launch this from our Koding IDE.
 
 Let's go to www.koding.com and sign in with our Github account that we created last time.
@@ -48,8 +48,8 @@ puts "Hello, world!"
 
 This should return the same sentence:
 
-###Objects in Ruby
-------------------
+Objects in Ruby
+---------------
 Ruby sorts related data, and the ways of manipulating it, into an abstract idea called an object.
 
 For example, the data that defines a number, and the methods on that number, define that number object.
@@ -63,8 +63,8 @@ and since five is an object, it also has methods on it
 5.next  # => 6
 ```
 
-###Variables
-------------
+Variables
+---------
 The data for any object exists in a part of the computer memory called the "heap".
 
 When we're storing something with Ruby, it checks for available memory and then stores the object data in the heap.
@@ -84,8 +84,8 @@ age.odd?    # => true
 ```
 
 
-###Data types in Ruby
----------------------
+Data types in Ruby
+------------------
 In Ruby, there are a number of different data types. 
 A data type is a set of values, and the allowable operations on those values. These data types are very important building blocks to the language. They are used to distinguish between the different uses that you might need your program to perform. For example, when dealing with a function in a spreadsheet, you will not be able to mix letters where you are supposed to use numbers, and for that purpose you have to find the appropriate data type to solve the issue. We will clarify this in greater depth later on.
 
@@ -159,8 +159,8 @@ No need to understand them now, as we will go through this in greated depth in t
 
 A hash table is a data structure that allows you to keep track of data in key / value pairs
 
-###Ruby Syntax
---------------
+Ruby Syntax
+-----------
 A big part of learning a new language is getting used to the syntax. The syntax of a programming language is the similar to grammar in linguistics.
 
 Let's start with the basics:
@@ -284,8 +284,8 @@ else # This will be run
 end
 ```
 
-###Ruby Style
--------------
+Ruby Style
+----------
 As with any other language, Ruby's community has decided on adopting a certain style for the way some things should look like inside of our code. Read more about the most widely adopted style guide [here][1]
 
 Here are a few of the important ones:
@@ -295,8 +295,8 @@ Here are a few of the important ones:
 3. Use UTF-8 as the source file encoding
 4. Use `def` with parentheses when there are parameters.
 
-###Exercises
-------------
+Exercises
+---------
 Please work on each exercise on your own and when you are done discuss how you solved this with the person next to you before moving on to the next exercise.
 
 You are to only use the command line when you want to create/edit/delete files or directories.
