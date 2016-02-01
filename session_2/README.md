@@ -10,7 +10,7 @@ Session Outline:
 - Ruby Style
 
 ###Recap of Session 1
-------------------
+---------------------
 In the last session we got introduced to the command line and we learned how to use the most commonly used commands such as `ls` `pwd` `cd` etc...
 
 The reason why we learned how to operate the command line first before diving into Ruby is because it would make more sense to do everything through the command line and not through Finder or File Explorer as a programmer.
@@ -30,7 +30,7 @@ RUBY on the other had does not exist! Some people make the mistake of thinking t
 
 
 ###Interactive Ruby Shell (irb)
-----------------------------
+-------------------------------
 This is one of the libraries that come built in with the Ruby language. The program is launched from a command line and allows the execution of Ruby commands with immediate response, experimenting in real-time. We can try to launch this from our Koding IDE.
 
 Let's go to www.koding.com and sign in with our Github account that we created last time.
@@ -49,7 +49,7 @@ puts "Hello, world!"
 This should return the same sentence:
 
 ###Objects in Ruby
----------------
+------------------
 Ruby sorts related data, and the ways of manipulating it, into an abstract idea called an object.
 
 For example, the data that defines a number, and the methods on that number, define that number object.
@@ -64,7 +64,7 @@ and since five is an object, it also has methods on it
 ```
 
 ###Variables
----------
+------------
 The data for any object exists in a part of the computer memory called the "heap".
 
 When we're storing something with Ruby, it checks for available memory and then stores the object data in the heap.
@@ -85,7 +85,7 @@ age.odd?    # => true
 
 
 ###Data types in Ruby
-------------------
+---------------------
 In Ruby, there are a number of different data types. 
 A data type is a set of values, and the allowable operations on those values. These data types are very important building blocks to the language. They are used to distinguish between the different uses that you might need your program to perform. For example, when dealing with a function in a spreadsheet, you will not be able to mix letters where you are supposed to use numbers, and for that purpose you have to find the appropriate data type to solve the issue. We will clarify this in greater depth later on.
 
@@ -160,7 +160,7 @@ No need to understand them now, as we will go through this in greated depth in t
 A hash table is a data structure that allows you to keep track of data in key / value pairs
 
 ###Ruby Syntax
------------
+--------------
 A big part of learning a new language is getting used to the syntax. The syntax of a programming language is the similar to grammar in linguistics.
 
 Let's start with the basics:
