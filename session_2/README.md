@@ -1,13 +1,15 @@
 ##Ruby Course Session 2
 
 Session Outline:
-- Recap
-- The 3 Rubies
-- Interactive Ruby Shell (irb)
-- Object everything
-- Data Types
-- Intro to the syntax
-- Ruby Style
+- [Recap][2]
+- [The 3 Rubies][3]
+- [Interactive Ruby Shell (irb)][4]
+- [Object everything][5]
+- [Variables] [6]
+- [Data Types][7]
+- [Intro to the syntax][8]
+- [Ruby Style][9]
+- [Exercises][10]
 
 Recap of Session 1
 ------------------
@@ -339,3 +341,13 @@ You are to only use the command line when you want to create/edit/delete files o
 - Create a loop that will keep asking the user a question of your choice and until the answer is correct the loop will continue to run.
 
   [1]: https://github.com/styleguide/ruby
+  [2]: https://github.com/warwickcoding/ruby/tree/master/session_2#recap-of-session-1
+  [3]: https://github.com/warwickcoding/ruby/tree/master/session_2#ruby-ruby-and-ruby
+  [4]: https://github.com/warwickcoding/ruby/tree/master/session_2#interactive-ruby-shell-irb
+  [5]: https://github.com/warwickcoding/ruby/tree/master/session_2#objects-in-ruby
+  [6]: https://github.com/warwickcoding/ruby/tree/master/session_2#variables
+  [7]: https://github.com/warwickcoding/ruby/tree/master/session_2#data-types-in-ruby
+  [8]: https://github.com/warwickcoding/ruby/tree/master/session_2#ruby-syntax
+  [9]: https://github.com/warwickcoding/ruby/tree/master/session_2#ruby-syntax
+  [10]: https://github.com/warwickcoding/ruby/tree/master/session_2#exercises
+

@@ -3,7 +3,7 @@ Welcome to warwickCoding's Ruby repository
 Course Directory
 
 - [Session 1][1]
-- Session 2
+- [Session 2][2]
 - Session 3
 - Session 4
 - Session 5
@@ -13,3 +13,4 @@ Course Directory
 
 
 [1]: /session_1
+[2]: /session_2
