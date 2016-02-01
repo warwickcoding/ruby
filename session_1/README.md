@@ -47,12 +47,12 @@ Let's get started!
 2. Create an account on [Github][8] (I'll explain why later)
 2. Sign up for an account on [Koding][9] **with your Github account**
 3. While we wait, we'll talk a bit about why we're using Koding and why a `*nix` based Operating system
-4. When the registration is done, Turn on the Virtual Machine.![Alt text](../images/Screen Shot 2015-12-29 at 13.28.54.png)
-5. You should arrive to a screen similar to this![Alt text](../images/Screen Shot 2015-12-28 at 23.23.00.png)
+4. When the registration is done, Turn on the Virtual Machine.![Alt text](../images/session_1/ruby_session_1-1.png)
+5. You should arrive to a screen similar to this![Alt text](../images/session_1/ruby_session_1-2.png)
 
-6. Now we want to check if Ruby is installed on the VM so we wil type `ruby -v` into the open terminal tab.![Alt text](../images/Screen Shot 2015-12-28 at 23.25.26.png)
+6. Now we want to check if Ruby is installed on the VM so we will type `ruby -v` into the open terminal tab.![Alt text](../images/session_1/ruby_session_1-3.png)
 
-7. We want to use a newer version than 1.9. to do that, we will need to install it using the built in Koding Package Manager. On the same terminal window, type in `kpm install ruby2` and wait for a few seconds.![Alt text](../images/Screen Shot 2015-12-28 at 23.32.37.png)
+7. We want to use a newer version than 1.9. to do that, we will need to install it using the built in Koding Package Manager. On the same terminal window, type in `kpm install ruby2` and wait for a few seconds.![Alt text](../images/session_1/ruby_session_1-4.png)
 8. After the installer has finished, type in `ruby -v` again and this time you should read `ruby 2.0.0`, Great!!
 9. Now we are ready to get started with the command line.
 
@@ -64,17 +64,17 @@ The command line is an interface for typing commands directly to a computer's op
 We will be learning how to use a Unix based command line shell called Bash for this course. You can read more on the different types of command lines interpreters [here][4]
 
 So far we have already used the command line in the previous steps. In the Koding IDE (Integrated Development Environment), the command line is inside the "Terminal" tab. If you do not have an open Terminal session already, you can find it here:
-![Alt text](../images/open-new-terminal.png)
+![Alt text](../images/session_1/ruby_session_1-5.png)
 
 For the following exercises, please type in all the examples in order to understand what is going on.
 
 ####Listing files
-The most basic command is `ls` which lists all the files in the current directory/folder.![Alt text](../images/Screen Shot 2015-12-28 at 23.52.32.png)
+The most basic command is `ls` which lists all the files in the current directory/folder.![Alt text](../images/session_1/ruby_session_1-6.png)
 If you take a closer look at the file system on the left hand side, you will notice that the `ls` command actually listed everything on there, except the files/folders that begin with a dot.
-If we want to see all the files/folders, include the ones that begin with a dot, we can use `ls -lA` ![Alt text](../images/Screen Shot 2015-12-28 at 23.55.11.png)
+If we want to see all the files/folders, include the ones that begin with a dot, we can use `ls -lA` ![Alt text](../images/session_1/ruby_session_1-7.png)
 
 ####Current directory
-If we want to make sure that we are in the correct directory, we would use the print working directory command, `pwd`.![Alt text](../images/Screen Shot 2015-12-28 at 23.59.37.png)
+If we want to make sure that we are in the correct directory, we would use the print working directory command, `pwd`.![Alt text](../images/session_1/ruby_session_1-8.png)
 
 The output shows us exactly where we are starting from the root directory on the computer. To understand how the paths work, you could compare them to creating a folder on your Desktop called work and inside work you create a word document called november-statements. The path for this word document will look like this: `~/Desktop/work/november-statements.docx`.
 
@@ -83,7 +83,7 @@ The tilde `~` means this is the Home directory for the computer.
 ####Changing directories
 What if I wanted to move into another directory other than `/home/zlahham`. This is where the `cd` command comes into play.
 
-If I want to go into the Web folder that was already there when I started the VM, I would type `cd Web` and in order to see what's inside that directory, I would type in `ls`![Alt text](../images/Screen Shot 2015-12-29 at 00.11.24.png)
+If I want to go into the Web folder that was already there when I started the VM, I would type `cd Web` and in order to see what's inside that directory, I would type in `ls`![Alt text](../images/session_1/ruby_session_1-9.png)
 
 But hey, what if this is not the directory that I'm looking for, how do I go back up to the previous one?
 The command would also involve using `cd` but this this we are adding a new parameter `cd ..` The two dots here imply that we want to move up a directory or in other words, go to the parent directory.
@@ -91,12 +91,12 @@ The command would also involve using `cd` but this this we are adding a new para
 ####Creating files
 It's probably a great time now to make sure that we are clear on the difference between a file and a folder/directory. Files can range from word documents to images, while folders/directories are the actual structures that hold these files in place. It is similar to the actual physical folders that hold paper files inside them.
 
-In this case we want to create an empty file with no extension, we would type in `touch my_first_file`. Touch creates the file into the given directory. We can check that the file was created by typing in `ls` to see if the new file is there ![Alt text](../images/Screen Shot 2015-12-29 at 00.24.41.png)
+In this case we want to create an empty file with no extension, we would type in `touch my_first_file`. Touch creates the file into the given directory. We can check that the file was created by typing in `ls` to see if the new file is there ![Alt text](../images/session_1/ruby_session_1-10.png)
 
 
 ####Creating folders/directories
 Now we want to create a folder that will enclose all of our files for the rest of the course. To do so, we have to make sure that we are inside the right directory first of all, by `pwd`, then we type in `mkdir projects`.
-mkdir stands for make directory, and we can check this new directory with `ls` ![Alt text](../images/Screen Shot 2015-12-29 at 00.28.48.png)
+mkdir stands for make directory, and we can check this new directory with `ls` ![Alt text](../images/session_1/ruby_session_1-11.png)
 
 Perfect!
 
@@ -138,7 +138,7 @@ An IDE is an Integrated Development Environment. What that means is that it is a
 - A text editor (red rectangle)
 - A file system (yellow rectangle)
 
-![Alt text](../images/Screen Shot 2015-12-29 at 13.50.52.png)
+![Alt text](../images/session_1/ruby_session_1-12.png)
 
 We need the terminal to run the ruby programs that we are going to be writing. We need the text editor to write the ruby code. Finally, we need the file systems to keep everything in one place and be able to understand the navigation visually.
 
