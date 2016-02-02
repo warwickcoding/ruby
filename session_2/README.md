@@ -307,36 +307,36 @@ You are to only use the command line when you want to create/edit/delete files o
 - Create a new directory `session_2`
 
 ####Exercise 1
-- Create a new file and name it `exercise_1`
+- Create a new file and name it `exercise_1.rb`
 - Open this file in your text editor part of the IDE
 - Write a program that will ask for your first and last name
 - Display the results in the format: `Hello, FirstName LastName`
-- Run the program with `ruby exercise_1`
+- Run the program with `ruby exercise_1.rb`
 
 ####Exercise 2
-- Create a new file and name it `exercise_2`
+- Create a new file and name it `exercise_2.rb`
 - Look into string interpolation
 - Repeat excecise 1 but this time using string interpolation
 
 ####Exercise 3
-- Create a new file and name it `exercise_3`
+- Create a new file and name it `exercise_3.rb`
 - Write a program that will ask for the users age and then multiply that by 2
 - End the program by displaying that age and a closing remark on that age
 
 ####Exercise 4
-- Create a new file and name it `exercise_4`
+- Create a new file and name it `exercise_4.rb`
 - Write a program that will convert a user inputed temperature from Celsius to Faherenheit
 - There is a restriction on the range of input, it has to be between 0-35
 - When it is subzero, tell the user that this is too cold
 - When it is over 35, tell the user that this is too hot
 
 ####Exercise 5 (Bonus)
-- Create a new file and name it `exercise_5`
+- Create a new file and name it `exercise_5.rb`
 - Look into `times` loops
 - Create a loop that will count from 1-100
 
 ####Exercise 6 (Bonus)
-- Create a new file and name it `exercise_6`
+- Create a new file and name it `exercise_6.rb`
 - Look into `while` loops
 - Create a loop that will keep asking the user a question of your choice and until the answer is correct the loop will continue to run.
 
