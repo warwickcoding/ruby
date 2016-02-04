@@ -28,7 +28,7 @@ Ruby is the language.
 
 `ruby` is a computer program that you will be using to run your ruby code.
 
-RUBY on the other had does not exist! Some people make the mistake of thinking that Ruby is an acronym for something else. The mixup is because the relate it to other acronym named languages such as BASIC (Beginner's All-purpose Symbolic Instruction Code).
+RUBY on the other had does not exist! Some people make the mistake of thinking that Ruby is an acronym for something else. The mix up is because they relate it to other acronym named languages, such as BASIC (Beginner's All-purpose Symbolic Instruction Code).
 
 
 Interactive Ruby Shell (irb)
@@ -152,12 +152,12 @@ EVERYTHING in Ruby is True! Yup, everything except the `false` and `nil` objects
 When we move onto if-else statements, we'll test this out on all the different data types that we learned about so far.
 
 ####Array
-No need to understand them now, as we will go through this in greated depth in the next sessions
+No need to understand them now, as we will go through this in greater depth in the next sessions
 
 For now, all you need to know is that Arrays are ordered lists of objects.
 
 ####Hash
-No need to understand them now, as we will go through this in greated depth in the next sessions
+No need to understand them now, as we will go through this in greater depth in the next sessions
 
 A hash table is a data structure that allows you to keep track of data in key / value pairs
 
@@ -181,7 +181,7 @@ To assign let's say a number/sentence so that we can use it later, we have to us
 To compare any two values, we use two equals signs, like so:
 `x == y`. This makes Ruby compare the stored values of x and y. If we take x and y as what they were from the above example, the comparison will be FALSE because `9078` is not equal to `"Hello everyone"`
 
-It is quite important to distinguis between `=` and `==`. The former simply means that we are assigning a value and the latter means are the given two values equal to each other.
+It is quite important to distinguish between `=` and `==`. The former simply means that we are assigning a value and the latter means are the given two values equal to each other.
 
 ####Converting from one data type to another
 It is important to remember that when we want to perform any arithmetic, we must make sure that all the field 
@@ -196,7 +196,7 @@ There are three different, ways to print output to the screen with Ruby:
 - `print "Hi there!"`
 - `p "Hi there!"`
 
-The first way adds a newline to the string it outputs if there isn’t one at the end already. On the other hand, `print` does not add the new line. Finally, `p` outputs extra information about what it's printing. The following examples will attempt to illustrate the difference.
+The first way adds a newline to the string it outputs. On the other hand, `print` does not add the new line. Finally, `p` outputs extra information about what it's printing. The following examples will attempt to illustrate the difference.
 
 ![Alt text](../images/session_2/ruby_session_2-2.png)
 
@@ -206,7 +206,7 @@ The object that is responsible for this is called `gets`.
 
 ![Alt text](../images/session_2/ruby_session_2-3.png)
 
-After you type in `gets`, you will have a new line that is ready to receive your input. After you press ENTER, this input is then returned to the screen as it would look like if you used `p`.  
+After you type in `gets`, you will have a new line that is ready to receive your input. After you press ENTER, this input is then returned to the screen as it would look like if you used `p`.
 
 If we want to save this user input to a variable, we can do the following:
 
@@ -217,7 +217,7 @@ Peter
 
 # If we want to call on this variable to check if it is saved.
 first_name
- => "Peter\n" 
+ => "Peter\n"
 ```
 We can see that the above variable that stored my first name looks a bit funny with the `\n` at the end. `\n` means that there is a new line that is being placed after the stored string. To remove this we would have to call on a method called `chomp` that belongs to the `gets` object.
 ```ruby
@@ -248,7 +248,6 @@ if first_name == "Mike"
 else
   puts "Be gone stranger!"
 end
-  
 ```
 As soon as you type ENTER after `end`, you should see a `Hello!`.
 
@@ -292,7 +291,7 @@ As with any other language, Ruby's community has decided on adopting a certain s
 
 Here are a few of the important ones:
 
-1. Almost everything is in lower `snake_case`, expections include Class names
+1. Almost everything is in lower `snake_case`, exceptions include Class names
 2. When indenting, use a 2 space tab instead of a 4 space tab
 3. Use UTF-8 as the source file encoding
 4. Use `def` with parentheses when there are parameters.
@@ -316,7 +315,7 @@ You are to only use the command line when you want to create/edit/delete files o
 ####Exercise 2
 - Create a new file and name it `exercise_2.rb`
 - Look into string interpolation
-- Repeat excecise 1 but this time using string interpolation
+- Repeat exercise 1 but this time using string interpolation
 
 ####Exercise 3
 - Create a new file and name it `exercise_3.rb`
@@ -325,7 +324,7 @@ You are to only use the command line when you want to create/edit/delete files o
 
 ####Exercise 4
 - Create a new file and name it `exercise_4.rb`
-- Write a program that will convert a user inputed temperature from Celsius to Faherenheit
+- Write a program that will convert a user inputted temperature from Celsius to Fahrenheit
 - There is a restriction on the range of input, it has to be between 0-35
 - When it is subzero, tell the user that this is too cold
 - When it is over 35, tell the user that this is too hot
