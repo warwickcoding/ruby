@@ -1,3 +1,6 @@
+| [Session 2 →](../session_2/README.md) |
+|---------------------------------------|
+
 ## Ruby Course Session 1
 
 Session Content:
