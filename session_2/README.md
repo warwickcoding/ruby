@@ -1,3 +1,7 @@
+| [← Session 1](../session_1/README.md) | [Session 3 →](../session_3/README.md) |
+|---------------------------------------|---------------------------------------|
+
+
 ##Ruby Course Session 2
 
 Session Outline:
