@@ -12,7 +12,7 @@ Session Outline:
 
 
 
-Recap of Session 1
+Recap of Session 2
 ------------------
 In the previous session, we learned how to use Ruby's interactive shell (`irb`). We also learned a bit more about the object-oriented nature of this language. We dived deeper into the different data types, such as integers, floats, strings, symbols, and booleans.
 
