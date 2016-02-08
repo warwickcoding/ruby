@@ -1,3 +1,6 @@
+| [← Session 2](../session_2/README.md) | [Home](../) |
+|---------------------------------------|-------------|
+
 ##Ruby Course Session 3
 
 Session Outline:
