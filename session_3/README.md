@@ -331,6 +331,7 @@ Write a program to print put the lyrics of the song "99 Bottle of Beer on the Wa
 *Hint*: Use a loop for the repetitive stuff.
 
   [1]: http://www.99-bottles-of-beer.net/lyrics.html://www.99-bottles-of-beer.net/lyrics.html
+  [2]: http://ruby-doc.org/
 
 
 
