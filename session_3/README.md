@@ -1,4 +1,4 @@
-| [← Session 2](../session_2/README.md) | [Home](../) |
+| [← Session 2](../session_2/README.md) | [Home](..) |
 |---------------------------------------|-------------|
 
 ##Ruby Course Session 3
