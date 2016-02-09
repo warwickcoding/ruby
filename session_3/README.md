@@ -337,5 +337,7 @@ Write a program to print put the lyrics of the song "99 Bottle of Beer on the Wa
   [2]: http://ruby-doc.org/
 
 
+###Exercise 7
+Search for another type of loop that is the virtual opposite of `while`. Write a program that uses that type of loop to run until it reaches your age. When it reached your age, it should display your age and stop.
 
 
