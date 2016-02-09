@@ -51,7 +51,7 @@ end
 # Versus
 
 unless num == 0
-  puts 'THis is not zero!'
+  puts 'This is not zero!'
 end
 ```
 
