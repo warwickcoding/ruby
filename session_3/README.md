@@ -324,7 +324,7 @@ Notice the `<<`, this is called a shovel operator. Try to find what it's used fo
   i = 0
 
   while i <= threshold
-    res << i
+    final_number << i
   end
 ```
 
