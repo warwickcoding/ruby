@@ -77,7 +77,7 @@ arr = [2, 5, 49, 1043, 7]
 | 1    | 5      |
 | 2    | 49     |
 | 3    | 1043   |
-
+| 4    | 7      |
 How do we confirm this? We'll I would say let's print the values of the elements using their indices
 ```ruby
 print arr[0] # => 2
@@ -153,7 +153,6 @@ The `push` method pushes a value into an integer as a new element at the end. It
 
 ```ruby
 arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 arr.push(11)
 arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
@@ -164,7 +163,6 @@ arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 ```ruby
 arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-
 arr.pop
 arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
@@ -173,16 +171,31 @@ arr.first # => 1
 arr.last  # => 10
 
 #### join
-The `join` method is what we use to convert an array into a string, it also takes on additional arguments that 
+The `join` method is what we use to convert an array into a string, it also takes on an optional arguments that acts as a separator between the elements.
 
+```ruby
+full_name = ["Ice", "Cube"]
 
+full_name.join #    => "IceCube"
+full_name.join(' ') => "Ice Cube"
+full_name.join('-') => "Ice-Cube
+```
 
-------
+### Array.new
+`Array.new` creates an instance of the Array class for us in the same way that `array = []` works.
 
-Sample array methods:
-- split
-- join
-- Array.new
+We can also add an argument to the `new` method that will create a number of elements for us depending on the number passed in.
+
+```ruby
+arr = Array.new    # => []
+arr = Array.new(5) # => [nil, nil, nil, nil, nil]
+```
+
+If we want the elements to contain some other default object other than `nil`, we would have to pass in another argument after the `5` in the previous example.
+
+```ruby
+arr = Array.new(5, 0) # => [0, 0, 0, 0, 0]
+```
 
 
 
@@ -203,6 +216,18 @@ Remember the `<<` we used last time? Try to find one of the methods that we've c
 Use that method to put a new entry into the animals array from the previous exercise. For example, ask for the users favourite animal and then throw that into the animals array.
 
 ### Exercise 3
+Create two-dimensional array that containts 3 sub-arrays using the `Array.new` way.
+
+```ruby
+# Your code here 👇 👇 👇
+...
+...
+arr = [ [1, 1, 1], [1, 1, 1], [1, 1, 1] ]
+```
+
+<!-- Array.new(3) { Array.new(3) } -->
+
+### Exercise 4
 Create a program that will take in a students grades and it will then return the average as a rounded down integer. For example, 99.123 becomes 99.
 
 ```ruby
@@ -216,3 +241,23 @@ average_result = 63
   grades.each { |grade| total += grade }
   total/grades.length
  -->
+
+### Exercise 5
+Read up on the `select` method. Use this method to look through the following array and return the number of animals.
+
+```ruby
+array = [ false, 892, "animal", 22, 
+          "fruit", "animal", "animal", 
+          "animal", "veggie", "animal", 
+          true, 74, "bread", "pasta", 
+          "animal", "human", "animal", true ]
+```
+
+<!-- array.select {|elem| elem == "animal" }.length -->
+
+### Exercise 6
+Repeat Exercise 6 but this time using a method that begins with the letter `c`. Find this method by digging into the ruby docs.
+
+
+<!-- array.count("animal") -->
+
