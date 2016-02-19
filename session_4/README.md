@@ -118,8 +118,9 @@ arr.count # => 10
 
 #### max & min
 ```ruby
-arr.max # => 10
-arr.min # => 1
+arr = [123, 901, 1, -89]
+arr.max # => 901
+arr.min # => -89
 ```
 
 #### reverse
@@ -131,17 +132,87 @@ arr.reverse # => [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 The `each` method allows you to iterate through an array's elements and apply a block of code to the elements. Let's take a look at a few of the ways we can apply this method.
 
 ```ruby
+arr.each do |i|
+  print i
+end
+# => 12345678910
+
+arr.each do |i|
+  print i += 1
+end
+# => 3456789101113
+
 ```
+
+This sort of looks like some of the loops we learned about. This is somewhat true in the sense that we are looping over a finite amount of elements in the array and in each iteration we printed the value of that element.
+
+Keep in mind that `each` is dealing with the actual value of the element and not its index.
+
+#### push
+The `push` method pushes a value into an integer as a new element at the end. It takes the value to be pushed as an argument
+
+```ruby
+arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+arr.push(11)
+arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+```
+
+#### pop
+`pop` does the opposite of `push`. It simply pops out the last element and removes it from the array.
+
+```ruby
+arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+arr.pop
+arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+#### first/ last
+arr.first # => 1
+arr.last  # => 10
+
+#### join
+The `join` method is what we use to convert an array into a string, it also takes on additional arguments that 
 
 
 
 ------
 
 Sample array methods:
-- length
-- each
-- max
-- 
+- split
+- join
 - Array.new
 
-- 
+
+
+Exercises
+---------
+
+### Exercise 1
+The following string should ideally be an array.
+```ruby
+animals = "Cow Cat Dog Elephant Horse Jaguar Zebra"
+```
+
+Find out how to convert this to an array.
+
+### Exercise 2
+Remember the `<<` we used last time? Try to find one of the methods that we've come across today and think about how it relates to that.
+
+Use that method to put a new entry into the animals array from the previous exercise. For example, ask for the users favourite animal and then throw that into the animals array.
+
+### Exercise 3
+Create a program that will take in a students grades and it will then return the average as a rounded down integer. For example, 99.123 becomes 99.
+
+```ruby
+grades = [ 59, 70, 63, 65, 74, 55, 52, 67 ]
+# Your code here 👊 👊 👊 👊
+average_result = 63
+```
+
+<!-- 
+  total = 0
+  grades.each { |grade| total += grade }
+  total/grades.length
+ -->
