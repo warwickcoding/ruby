@@ -1,7 +1,7 @@
 | [← Session 3](../session_3/README.md) |
 |---------------------------------------|
 
-##Ruby Course Session 4
+## Ruby Course Session 4
 
 Session Outline:
 - Recap
@@ -42,5 +42,106 @@ If you followed the above steps, you should now be able to use rvm as your versi
 - To confirm that this is the case, please type `ruby -v` and expect to see that new version
 
 
+Arrays
+------
+Simply put, arrays are a type of data structure/variable that stores list of values. These values can be strings, integers, booleans, symbols, or even other sub-arrays.
+
+The things that you store in an array, irrespective of their datatype, are called elements.
+Here are a few sample array:
+
+```ruby
+array = [ 1, 5, 7, 12, 78 ] # => 5 elements
+
+another_array = [ "Mike", 27, "USA", "Green" ] # => 4 elements
+
+two_dimensional_array = [ [ "a", "b", "c" ], [ 1, 2, 3 ], [ "do", "re", "mi"] ]
+# => 3 elements
+```
+
+The final example tells us that there are only 3 elements in the given array. This might be confusing at first, but the answer is quite simple. When you look at an array, you should only count how many elements are in the top level that we are concerned with. In this case, we are dealing with two levels, the first of which contains 3 elements, which happen to be arrays.
+Arrays of arrays are called multidimentional arrays.
+
+### Indexing
+We have to understand that arrays in Ruby store information in a **sequence**. Because of this, everything stored in arrays will always be accessed in a chronological order.
+
+One of the features that make arrays useful is the ability to call on the indeces of its elements. Each element in an array has an index that we can refer to. Indexing starts with 0 rather than 1. This is something that you have to understand from the beginning.
+Looking at the following array, let's try to understand indexing.
+
+```ruby
+arr = [2, 5, 49, 1043, 7]
+```
+
+|index | element|
+| ---- | ------ |
+| 0    | 2      |
+| 1    | 5      |
+| 2    | 49     |
+| 3    | 1043   |
+
+How do we confirm this? We'll I would say let's print the values of the elements using their indices
+```ruby
+print arr[0] # => 2
+print arr[1] # => 5
+...
+...
+```
+
+Notice that we used the square brackets to get back the element value/content. This is the case when dealing with indices, we always use the square brackets.
+
+We also use the same brackets to assign values to certain element, this includes over-writing or creating a new element. Let's take a look at the following example:
+
+```ruby
+arr = [ 1, 1, 2016 ]
+
+# Overwriting an existing element using its index
+arr[0] = 22
+puts arr # => [22, 1, 2016]
+
+# Creating a new element using a non-existing index
+arr[3] = 51
+puts arr # => [22, 1, 2016, 51]
+```
 
 
+### Some Array methods
+Arrays have many different methods that the respond to, we're going to explore a handful and please try to read about the rest on the Ruby Official documentation.
+
+If you call `.methods.count` on a sample array you will get a number over 160. That's a massive list of methods!
+
+
+#### length/ count
+```ruby
+arr = [1,2,3,4,5,6,7,8,9,10]
+arr.length # => 10
+arr.count # => 10
+```
+
+#### max & min
+```ruby
+arr.max # => 10
+arr.min # => 1
+```
+
+#### reverse
+```ruby
+arr.reverse # => [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+```
+
+#### each
+The `each` method allows you to iterate through an array's elements and apply a block of code to the elements. Let's take a look at a few of the ways we can apply this method.
+
+```ruby
+```
+
+
+
+------
+
+Sample array methods:
+- length
+- each
+- max
+- 
+- Array.new
+
+- 
