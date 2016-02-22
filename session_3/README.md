@@ -1,7 +1,7 @@
-| [← Session 2](../session_2/README.md) |[→ Session 4](../session_4/README.md) |
-|---------------------------------------|--------------------------------------|
+| [← Session 2](../session_2/README.md) |[ Session 4 →](../session_4/README.md) |
+|---------------------------------------|---------------------------------------|
 
-##Ruby Course Session 3
+## Ruby Course Session 3
 
 Session Outline:
 - Recap
@@ -140,16 +140,7 @@ puts "Hello Mikey!!!"
 
 `while` is testing our condition to check if name is `== Mike`. The initial run will obviously be false because we declared `name` as an empty string. Then the program ask for an input and that input is fed into the loop again!
 
-```flow
-st=>start: name == ""
-e=>end: puts "Hello Mikey!"
-op=>operation: is name == "Mike" ?
-cond=>condition: Processing...
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
+![loop diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/While-loop-diagram.svg/271px-While-loop-diagram.svg.png)
 
 We can also set a condition to interrupt the loop like so:
 
@@ -257,7 +248,7 @@ In our case, we care about Ruby documentation. Naturally, the first place to loo
 Exercises
 ---------
 
-###Exercise 1
+### Exercise 1
 Look at the following statements and decide whether each one is true or false.
 
 ```ruby
@@ -270,7 +261,7 @@ c = -9 <= -9
 d = 10 == 1000
 ```
 
-###Exercise 2
+### Exercise 2
 Same thing here but we're adding boolean operators to the mix `&&` and `||`
 
 ```ruby
@@ -289,7 +280,7 @@ f = false || false
 g = true || true
 ```
 
-###Exercise 3
+### Exercise 3
 Same thing but with the 'not' operator `!` 
 
 ```ruby
@@ -300,7 +291,7 @@ b = !true && !true
 c = !(50 / 5 == 10)
 ```
 
-###Exercise 4
+### Exercise 4
 Fix the following program, it seems to keep running non stop 😵
 
 ```ruby
@@ -310,7 +301,7 @@ while true
 end
 ```
 
-###Exercise 5
+### Exercise 5
 Again fix the following program so that it will display a number at the end of the program consisting of 1..`threshold`. 
 For example, if I enter 10, it should return `"12345678910"`
 
@@ -328,7 +319,7 @@ Notice the `<<`, this is called a shovel operator. Try to find what it's used fo
   end
 ```
 
-###Exercise 6
+### Exercise 6
 Write a program to print put the lyrics of the song "99 Bottle of Beer on the Wall". If you are unfamiliar with the song, check it out [here][1].
 
 *Hint*: Use a loop for the repetitive stuff.
@@ -337,7 +328,7 @@ Write a program to print put the lyrics of the song "99 Bottle of Beer on the Wa
   [2]: http://ruby-doc.org/
 
 
-###Exercise 7
+### Exercise 7
 Search for another type of loop that is the virtual opposite of `while`. Write a program that uses that type of loop to run until it reaches your age. When it reached your age, it should display your age and stop.
 
 
