@@ -10,12 +10,9 @@ Session Outline:
 - Hashes
 - Exercises
 
-
-
 Recap of Session 3
 ------------------
 In the previous session, we got introduces to different loops in the Ruby language. We started with `while` loops and demonstrated how they perform. We then moved onto `for`, `upto`, `downto`, and `times` loops. We saw how each of them work and how some of them can be used in lieu of others.
-
 
 
 Upgrading our Ruby version

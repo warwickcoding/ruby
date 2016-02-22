@@ -1,5 +1,5 @@
-| [← Session 2](../session_2/README.md) |
-|---------------------------------------|
+| [← Session 2](../session_2/README.md) |[→ Session 4](../session_4/README.md) |
+|---------------------------------------|--------------------------------------|
 
 ##Ruby Course Session 3
 
