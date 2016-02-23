@@ -34,7 +34,7 @@ Please follow the below instructions carefully and don't make any spelling mista
 If you followed the above steps, you should now be able to use rvm as your version manager for different Ruby versions. The first thing we are going to do it to use the latest stable release and make it the default version.
 
 - Type `rvm install 2.3.0` into your terminal and wait for it to install
-- As soon as the download is complete, type `rvm list'. We are looking for that new version to be in our list. 
+- As soon as the download is complete, type `rvm list'. We are looking for that new version to be in our list.
 - If you see the version, please type `rvm use 2.3.0 --default`, which will now make our default version of Ruby to 2.3.
 - To confirm that this is the case, please type `ruby -v` and expect to see that new version
 
@@ -233,7 +233,7 @@ grades = [ 59, 70, 63, 65, 74, 55, 52, 67 ]
 average_result = 63
 ```
 
-<!-- 
+<!--
   total = 0
   grades.each { |grade| total += grade }
   total/grades.length
@@ -243,10 +243,10 @@ average_result = 63
 Read up on the `select` method. Use this method to look through the following array and return the number of animals.
 
 ```ruby
-array = [ false, 892, "animal", 22, 
-          "fruit", "animal", "animal", 
-          "animal", "veggie", "animal", 
-          true, 74, "bread", "pasta", 
+array = [ false, 892, "animal", 22,
+          "fruit", "animal", "animal",
+          "animal", "veggie", "animal",
+          true, 74, "bread", "pasta",
           "animal", "human", "animal", true ]
 ```
 
@@ -258,3 +258,27 @@ Repeat Exercise 6 but this time using a method that begins with the letter `c`. 
 
 <!-- array.count("animal") -->
 
+### Exercise 7
+You are given an array with numbers of different patterns, such as: `[2, 4, 6, 8, 10]` or `[1, 3, 9, 27]`. You are also given a divisor.
+
+Write a program that will return all numbers from our array which are divisible by the given divisor. Using the following inputs, your program should be able to solve for both cases below:
+
+```ruby
+# Case 1
+numbers = [0,1,2,3,4,5,6]
+divisor = 4
+
+# Case 2
+numbers = [1,2,3,4,5,6]
+divisor = 2
+```
+
+<!--
+  array = []
+  numbers.each do |number|
+    if number%divisor == 0 
+      array << number 
+    end
+  end
+  array
+-->
