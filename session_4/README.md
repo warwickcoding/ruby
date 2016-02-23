@@ -24,12 +24,13 @@ In order to download different versions of Ruby, we will be using a version mana
 Please follow the below instructions carefully and don't make any spelling mistakes. Also, when you see the word `username` this means you have to replace it with your actual username which is first word that shows up when you fire up your terminal, before the `:`. For example, here is mine:
 ![img1](../images/session_4/ruby_session_4-1.png)
 
-1. Open up a Terminal tab and type: `sudo chown -R username ~username/.gnupg`
-2. Type `chmod 600 ~/.gnupg/gpg.conf`
-3. Type `chmod 700 ~/.gnupg`
-4. Go to https://rvm.io/rvm/install
-5. Copy the entire command that begins with `gpg` into your terminal
-6. Then type the following into your terminal: `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
+1. Type `gpg` into a new terminal
+2. Open up a Terminal tab and type: `sudo chown -R username ~username/.gnupg`
+3. Type `chmod 600 ~/.gnupg/gpg.conf`
+4. Type `chmod 700 ~/.gnupg`
+6. Go to https://rvm.io/rvm/install
+7. Copy the entire command that begins with `gpg` into your terminal
+8. Then type the following into your terminal: `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
 If you followed the above steps, you should now be able to use rvm as your version manager for different Ruby versions. The first thing we are going to do it to use the latest stable release and make it the default version.
 
