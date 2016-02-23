@@ -274,6 +274,7 @@ divisor = 2
 ```
 
 <!--
+```ruby
   array = []
   numbers.each do |number|
     if number%divisor == 0 
@@ -281,4 +282,11 @@ divisor = 2
     end
   end
   array
+
+  OR
+
+  numbers.select do |n|
+    n % divisor == 0
+  end
+```
 -->
