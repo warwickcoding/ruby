@@ -291,3 +291,10 @@ divisor = 2
   end
 ```
 -->
+
+### Exercise 8
+The following array is a multi-dimensional one. We want it to be 1-dimensional. Find out which method to use for this purpose and use it to change the array.
+
+```ruby
+arr = [[1,2,3],[4,5,6,7],[8,9,1111,32]]
+```
