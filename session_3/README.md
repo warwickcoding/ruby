@@ -319,6 +319,21 @@ Notice the `<<`, this is called a shovel operator. Try to find what it's used fo
   end
 ```
 
+**ANSWER**
+
+```ruby
+puts 'Enter a number to act as a threshold'
+threshold = Integer(gets.chomp)
+final_number = ''
+i = 1
+
+while i <= threshold
+  final_number << i.to_s
+  i += 1
+end
+
+puts final_number
+```
 ### Exercise 6
 Write a program to print put the lyrics of the song "99 Bottle of Beer on the Wall". If you are unfamiliar with the song, check it out [here][1].
 
