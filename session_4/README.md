@@ -208,10 +208,24 @@ animals = "Cow Cat Dog Elephant Horse Jaguar Zebra"
 
 Find out how to convert this to an array.
 
+SOLUTION:
+
+```ruby
+animals.split
+```
+
 ### Exercise 2
 Remember the `<<` we used last time? Try to find one of the methods that we've come across today and think about how it relates to that.
 
 Use that method to put a new entry into the animals array from the previous exercise. For example, ask for the users favourite animal and then throw that into the animals array.
+
+SOLUTION:
+
+```ruby
+fav_animal = gets.chomp
+
+animals << fav_animal
+```
 
 ### Exercise 3
 Create two-dimensional array that containts 3 sub-arrays using the `Array.new` way.
@@ -220,10 +234,13 @@ Create two-dimensional array that containts 3 sub-arrays using the `Array.new` w
 # Your code here 👇 👇 👇
 ...
 ...
-arr = [ [1, 1, 1], [1, 1, 1], [1, 1, 1] ]
+# arr => [ [1, 1, 1], [1, 1, 1], [1, 1, 1] ]
 ```
 
-<!-- Array.new(3) { Array.new(3) } -->
+SOLUTION:
+```ruby
+arr = Array.new(3) { Array.new(3) }
+```
 
 ### Exercise 4
 Create a program that will take in a students grades and it will then return the average as a rounded down integer. For example, 99.123 becomes 99.
@@ -234,11 +251,12 @@ grades = [ 59, 70, 63, 65, 74, 55, 52, 67 ]
 average_result = 63
 ```
 
-<!--
-  total = 0
-  grades.each { |grade| total += grade }
-  total/grades.length
- -->
+SOLUTION:
+```ruby
+total = 0
+grades.each { |grade| total += grade }
+total/grades.length
+```
 
 ### Exercise 5
 Read up on the `select` method. Use this method to look through the following array and return the number of animals.
@@ -251,13 +269,19 @@ array = [ false, 892, "animal", 22,
           "animal", "human", "animal", true ]
 ```
 
-<!-- array.select {|elem| elem == "animal" }.length -->
+SOLUTION:
+```ruby
+array.select {|elem| elem == "animal" }.length
+```
 
 ### Exercise 6
 Repeat Exercise 6 but this time using a method that begins with the letter `c`. Find this method by digging into the ruby docs.
 
 
-<!-- array.count("animal") -->
+SOLUTION:
+```ruby
+array.count("animal")
+```
 
 ### Exercise 7
 You are given an array with numbers of different patterns, such as: `[2, 4, 6, 8, 10]` or `[1, 3, 9, 27]`. You are also given a divisor.
@@ -274,12 +298,13 @@ numbers = [1,2,3,4,5,6]
 divisor = 2
 ```
 
-<!--
+SOLUTION:
+
 ```ruby
   array = []
   numbers.each do |number|
-    if number%divisor == 0 
-      array << number 
+    if number%divisor == 0
+      array << number
     end
   end
   array
@@ -290,11 +315,18 @@ divisor = 2
     n % divisor == 0
   end
 ```
--->
 
 ### Exercise 8
 The following array is a multi-dimensional one. We want it to be 1-dimensional. Find out which method to use for this purpose and use it to change the array.
 
 ```ruby
 arr = [[1,2,3],[4,5,6,7],[8,9,1111,32]]
+```
+
+SOLUTION:
+```ruby
+arr.flatten!
+
+arr # => [1, 2, 3, 4, 5, 6, 7, 8, 9, 1111, 32]
+
 ```
