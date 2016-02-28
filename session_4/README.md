@@ -12,12 +12,12 @@ Session Outline:
 
 Recap of Session 3
 ------------------
-In the previous session, we got introduces to different loops in the Ruby language. We started with `while` loops and demonstrated how they perform. We then moved onto `for`, `upto`, `downto`, and `times` loops. We saw how each of them work and how some of them can be used in lieu of others.
+In the previous session, we got introduced to different loops in the Ruby language. We started with `while` loops and demonstrated how they perform. We then moved onto `for`, `upto`, `downto`, and `times` loops. We saw how each of them work and how some of them can be used in lieu of others.
 
 
 Upgrading our Ruby version
 --------------------------
-As you might remember from the first session, we installed Ruby 2.0.0 using Koding's built in package manager. That was fine for the first few sessions because we were learning about some core features of Ruby that have not changed much since that version. Today, the latest stable release of Ruby is 2.3.0, this is something that we can check out from the [Ruby-lang website](https://www.ruby-lang.org/en/downloads/).
+As you may remember from the first session, we installed Ruby 2.0.0 using Koding's built in package manager. That was fine for the first few sessions because we were learning about some core features of Ruby that have not changed much since that version. Today, the latest stable release of Ruby is 2.3.0, this is something that we can check out from the [Ruby-lang website](https://www.ruby-lang.org/en/downloads/).
 
 In order to download different versions of Ruby, we will be using a version manager to that, called [RVM](https://rvm.io/). RVM allows us to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems. Please feel free to read more about RVM on its website.
 
