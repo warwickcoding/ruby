@@ -134,7 +134,32 @@ h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecin
 # End Result:
 h = {}
 ```
+
 ### Exercise 3
+Because you removed everything in my hash, you will now have to assist me in populating it again, please? 😇
+I want the new hash to contain the following:
+- All key should be strings that point to values
+- All values should be Arrays
+
+Here are the arrays that I need:
+```ruby
+[ 90, 55, 73, 79, 65, 42, 78, 19, 77 ]
+[ 'fred', 'charlie', 'samantha', 'bash', 'bryan', 'pedro', 'kang', 'morty', 'tan' ]
+[ 22, 21, 20, 20, 19, 22, 29, 22, 21 ]
+```
+
+I'll leave it upto you to name the keys that point to the above values. All I need is a clean way to organise this data so I can manipulate it later (you will probably also do that, not me 😜).
+
+<!-- SOLUTION:
+
+```ruby
+student_data = {
+  'grades' => [ 90, 55, 73, 79, 65, 42, 78, 19, 77 ],
+  'names'  => [ 'fred', 'charlie', 'samantha', 'bash', 'bryan', 'pedro', 'kang', 'morty', 'tan' ],
+  'ages'   => [ 22, 21, 20, 20, 19, 22, 29, 22, 21 ]
+}
+```
+-->
 ### Exercise 4
 ### Exercise 5
 
