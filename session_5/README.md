@@ -197,7 +197,7 @@ Summary
 - Hashes are a collection of key-value pairs
 - Keys must be unique
 - Two ways to create hashes
--
+- Old vs new syntax
 
 Exercises
 ---------
