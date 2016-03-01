@@ -336,3 +336,14 @@ dishes.select { |dish, rating| rating > 7 }
 ```
 -->
 
+### Exercise 7
+
+Use the element in the following array to populate your hash.
+
+```ruby
+information = [["one@email.com", "23 High st.", "079-555-123-4567"],
+            ["two@email.com", "398 Downtown", "078-123-234-3454"]]
+
+information_new = {"James Wrong" => {}, "Sally Wright" => {}}
+```
+
