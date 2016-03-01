@@ -142,6 +142,7 @@ I want the new hash to contain the following:
 - All values should be Arrays
 
 Here are the arrays that I need:
+
 ```ruby
 [ 90, 55, 73, 79, 65, 42, 78, 19, 77 ]
 [ 'fred', 'charlie', 'samantha', 'bash', 'bryan', 'pedro', 'kang', 'morty', 'tan' ]
@@ -160,6 +161,27 @@ student_data = {
 }
 ```
 -->
+
 ### Exercise 4
+Using your newly created hash from Exercise 3, now I want you to help me find the highest grade in my class and return its the name of that student, their grade, and the age.
+
+*HINT*: Iterate through the hash after getting the vital information from the array 🤔
+This is simpler that you might think at first.
+
+```ruby
+student_data = {
+  'grades' => [ 90, 55, 73, 79, 65, 42, 78, 19, 77 ],
+  'names'  => [ 'fred', 'charlie', 'samantha', 'bash', 'bryan', 'pedro', 'kang', 'morty', 'tan' ],
+  'ages'   => [ 22, 21, 20, 20, 19, 22, 29, 22, 21 ]
+}
+
+highest_grade = student_data['grades'].max
+highest_grade_index = student_data['grades'].index(high)
+
+student_data.each do |key, value|
+  puts value[highest_grade_index]
+end
+```
+
 ### Exercise 5
 
