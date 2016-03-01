@@ -168,6 +168,9 @@ Using your newly created hash from Exercise 3, now I want you to help me find th
 *HINT*: Iterate through the hash after getting the vital information from the array 🤔
 This is simpler that you might think at first.
 
+<!--
+SOLUTION:
+
 ```ruby
 student_data = {
   'grades' => [ 90, 55, 73, 79, 65, 42, 78, 19, 77 ],
@@ -176,12 +179,13 @@ student_data = {
 }
 
 highest_grade = student_data['grades'].max
-highest_grade_index = student_data['grades'].index(high)
+highest_grade_index = student_data['grades'].index(highest_grade)
 
 student_data.each do |key, value|
   puts value[highest_grade_index]
 end
 ```
+-->
 
 ### Exercise 5
 
