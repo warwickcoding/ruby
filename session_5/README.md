@@ -258,7 +258,7 @@ end
 -->
 
 ### Exercise 5
-Convert the following hash's keys from strings to symbols using iteration.
+Convert the following hash's keys from strings to symbols using `replace`.
 
 ```ruby
 hash = {
@@ -267,3 +267,10 @@ hash = {
   'likes' => 'food'
 }
 ```
+
+SOLUTION:
+
+```ruby
+hash.replace({:name => "jay", :age => 53, :likes => "food"})
+```
+
