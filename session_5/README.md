@@ -132,13 +132,46 @@ What if we wanted to get something else in return, other than `nil`? A good case
 food_fridge = Hash.new("NO NILS HERE!")
 ```
 
+Hashes and Symbols
+------------------
+We've seen examples where we use different Ruby data types to act as our keys in hashes. This is perfectly fine to do. However, the Ruby community usually agrees that symbols are the best data type for keys. This would still work in the same way, but other than using strings, we will use symbols.
+
+Just as a reminder, symbols are the cousins to strings, with a few slight differences:
+- They persist in memory as the same object when called upon multiple times
+- They begin with a colon and don't end with anything else
+
+Example of a symbol vs string:
+
+```ruby
+profession = "Ninja"
+profession = :ninja
+```
+
+In terms of using symbols inside a hash, this is how we would do so:
+
+```ruby
+food_in_fridge = {
+  :pizza => 1,
+  :eggs  => 4,
+  :milk  => 1,
+  :ham   => 3
+}
+```
+
+In addition, we have to take care when dealing with symbols because we can't use spaces between words like we used to in strings, so `'First name` would now become: `:first_name`.
+
+As a general rule, try to use symbols in lieu of strings when dealing with keys inside hashes. The reasoning behind this is based on the following facts:
+- Symbols cannot be changes once created
+- Symbols save memory
+- Symbols are faster to manipulate in hashes than strings.
+
 
 Summary
 -------
 - Hashes are a collection of key-value pairs
 - Keys must be unique
 - Two ways to create hashes
-- 
+-
 
 Exercises
 ---------
@@ -225,4 +258,12 @@ end
 -->
 
 ### Exercise 5
+Convert the following hash's keys from strings to symbols using iteration.
 
+```ruby
+hash = {
+  'name'  => 'Jay',
+  'age'   => 53,
+  'likes' => 'food'
+}
+```
