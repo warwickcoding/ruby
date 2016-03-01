@@ -230,6 +230,11 @@ h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecin
 h = {}
 ```
 
+SOLUTION:
+```ruby
+h.clear
+```
+
 ### Exercise 3
 Because you removed everything in my hash, you will now have to assist me in populating it again, please? 😇
 I want the new hash to contain the following:
@@ -315,7 +320,7 @@ dishes = {
 ```
 
 
-
+SOLUTION:
 ```ruby
 dishes = {
   bolognese: 7,
