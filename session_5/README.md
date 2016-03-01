@@ -86,12 +86,54 @@ On the side bar, we can look for the `each` method and from there well see this:
 
 ![Hash#each doc](../images/session_5/ruby_session_5-2.png)
 
+Try reading through the documentation for this method and let's discuss this when you're done.
+
+#### The`each_key` and `each_value`
+These methods allow you to call a certain block of code for each key and each value respectively. This is valuable if we only want to use one of the pair rather than use both at the same time.
+
+This also means that we will have only one argument in these new methods.
+
+```ruby
+hash = { "a" => 1, "b" => 2 }
+
+hash.each_key { |key| print key }
+# => a b
+
+hash.each_value { |value| print value }
+# => 1 2
+```
+
 Exercises
 ---------
 
 ### Exercise 1
+We are trying to push a hash object that is given to us into an Array. The following code is not doing the job, please try to fix it.
+Try to remember how to push elements into an array.
+
+```ruby
+arr = []
+arr.push {:a => "b", :c => "d"}
+```
+
+<!-- SOLUTION:
+
+```ruby
+arr = []
+arr << {:a => "b", :c => "d"}
+# OR
+arr.push({:a => "b", :c => "d"})
+```
+-->
 
 ### Exercise 2
+I have this really annoying and long hash that I would like to get rid of, but the only problem is that I can't delete its content without using an approved Hash method to remove all its keys and values. Please help me by finding a method to do this.
+
+```ruby
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine' :three => 'number', 'name' => 'Carlos'}
+
+# End Result:
+h = {}
+```
 ### Exercise 3
 ### Exercise 4
 ### Exercise 5
