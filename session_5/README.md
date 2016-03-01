@@ -211,7 +211,7 @@ arr = []
 arr.push {:a => "b", :c => "d"}
 ```
 
-<!-- SOLUTION:
+SOLUTION:
 
 ```ruby
 arr = []
@@ -219,7 +219,6 @@ arr << {:a => "b", :c => "d"}
 # OR
 arr.push({:a => "b", :c => "d"})
 ```
--->
 
 ### Exercise 2
 I have this really annoying and long hash that I would like to get rid of, but the only problem is that I can't delete its content without using an approved Hash method to remove all its keys and values. Please help me by finding a method to do this.
@@ -247,7 +246,7 @@ Here are the arrays that I need:
 
 I'll leave it upto you to name the keys that point to the above values. All I need is a clean way to organise this data so I can manipulate it later (you will probably also do that, not me 😜).
 
-<!-- SOLUTION:
+SOLUTION:
 
 ```ruby
 student_data = {
@@ -256,7 +255,6 @@ student_data = {
   'ages'   => [ 22, 21, 20, 20, 19, 22, 29, 22, 21 ]
 }
 ```
--->
 
 ### Exercise 4
 Using your newly created hash from Exercise 3, now I want you to help me find the highest grade in my class and return its the name of that student, their grade, and the age.
@@ -264,7 +262,6 @@ Using your newly created hash from Exercise 3, now I want you to help me find th
 *HINT*: Iterate through the hash after getting the vital information from the array 🤔
 This is simpler that you might think at first.
 
-<!--
 SOLUTION:
 
 ```ruby
@@ -281,7 +278,6 @@ student_data.each do |key, value|
   puts value[highest_grade_index]
 end
 ```
--->
 
 ### Exercise 5
 Convert the following hash's keys from strings to symbols using `replace`.
@@ -294,12 +290,11 @@ hash = {
 }
 ```
 
-<!-- SOLUTION:
+SOLUTION:
 
 ```ruby
 hash.replace({:name => "jay", :age => 53, :likes => "food"})
 ```
--->
 
 ### Exercise 6
 A food critic would like us to provide him with the best dishes on the menu according to their rating. Take the following hash and add the necessary code to display the dishes that have a rating that is higher that 7.
@@ -320,7 +315,6 @@ dishes = {
 ```
 
 
-<!-- SOLUTION:
 
 ```ruby
 dishes = {
@@ -334,7 +328,6 @@ dishes = {
 
 dishes.select { |dish, rating| rating > 7 }
 ```
--->
 
 ### Exercise 7
 
