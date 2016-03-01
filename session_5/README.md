@@ -165,6 +165,32 @@ As a general rule, try to use symbols in lieu of strings when dealing with keys 
 - Symbols save memory
 - Symbols are faster to manipulate in hashes than strings.
 
+#### To hash rocket or not to?
+So far we have used hash rockets `=>` to link keys with values inside our hashes. This is perfectly okay and arguably more expressive than the new way of linking them. However, in Ruby 1.9 the new way was introduced and we don't know if support for the hash rocket will be dropped, so to be on the safe side, we'll learn it.
+
+You also have to bear in mind that this applies only to symbols!
+
+```ruby
+# Hash rocket
+
+hash = {
+  :name => 'Chris'
+}
+
+# No hash rocket
+
+hash = {
+  name: 'Chris'
+}
+```
+
+Clean and simple, right?
+
+This entails the follows:
+- get rid of the colon in front of the symbol
+- place a colon after the word
+- remove the hash rocket all together
+
 
 Summary
 -------
@@ -268,9 +294,45 @@ hash = {
 }
 ```
 
-SOLUTION:
+<!-- SOLUTION:
 
 ```ruby
 hash.replace({:name => "jay", :age => 53, :likes => "food"})
 ```
+-->
+
+### Exercise 6
+A food critic would like us to provide him with the best dishes on the menu according to their rating. Take the following hash and add the necessary code to display the dishes that have a rating that is higher that 7.
+
+Oh, also find the bugs in the hash before you start and fix them. Remember, we want to use the new Ruby syntax for this hash.
+
+```ruby
+
+dishes = {
+  bolognese:            7,
+  :pizza: =>            8,
+  'oysters':            10,
+  burgers:              8,
+  'sea food platter' => 3,
+  nachos:               9
+}
+
+```
+
+
+<!-- SOLUTION:
+
+```ruby
+dishes = {
+  bolognese: 7,
+  pizza: 8,
+  oysters: 10,
+  burgers: 5,
+  sea_food_platter: 3,
+  nachos: 9
+}
+
+dishes.select { |dish, rating| rating > 7 }
+```
+-->
 
