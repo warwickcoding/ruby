@@ -103,6 +103,43 @@ hash.each_value { |value| print value }
 # => 1 2
 ```
 
+Hashes and `nil`
+----------------
+So far we haven't really touched `nil`. We just know that `nil` is a non-true value, just like `false`. In Ruby, `nil` is considered to be "Falsey" rather than just plain old false.
+
+`nil` means that there is nothing at all in here, while `false` means this is not `true`. There is a massive difference between the two and each of them have their rightful place in the language.
+
+When we bring hashes into the mix, we can start to get a basic understanding of how `nil` operates. Let's take a look at the following example which will attempt to highlight what happens when we call on a key that doesn't exist in our hash.
+
+```ruby
+food_in_fridge = {
+  'pizza' => 1,
+  'eggs'  => 4,
+  'milk'  => 1,
+  'ham'   => 3
+}
+
+food_in_fridge['pizza'] # => 1
+food_in_fridge['pasta'] # => 1
+
+```
+
+As you can see, when we asked the hash if it has any keys that are called `pasta`, we got a `nil` object.
+
+What if we wanted to get something else in return, other than `nil`? A good case usage would be maybe auto correct ourselves when debugging for mistakes. This would have to take place before we create the Hash, we would pass an argument that would be returned instead of `nil`.
+
+```ruby
+food_fridge = Hash.new("NO NILS HERE!")
+```
+
+
+Summary
+-------
+- Hashes are a collection of key-value pairs
+- Keys must be unique
+- Two ways to create hashes
+- 
+
 Exercises
 ---------
 
