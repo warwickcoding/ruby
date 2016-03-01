@@ -225,7 +225,7 @@ arr.push({:a => "b", :c => "d"})
 I have this really annoying and long hash that I would like to get rid of, but the only problem is that I can't delete its content without using an approved Hash method to remove all its keys and values. Please help me by finding a method to do this.
 
 ```ruby
-h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine' :three => 'number', 'name' => 'Carlos'}
+h = {'dog' => 'canine', 'cat' => 'feline', 'donkey' => 'asinine', 12 => 'dodecine', :three => 'number', 'name' => 'Carlos'}
 
 # End Result:
 h = {}
