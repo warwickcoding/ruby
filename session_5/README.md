@@ -120,7 +120,7 @@ food_in_fridge = {
 }
 
 food_in_fridge['pizza'] # => 1
-food_in_fridge['pasta'] # => 1
+food_in_fridge['pasta'] # => nil
 
 ```
 

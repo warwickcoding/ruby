@@ -3,7 +3,7 @@
 
 ## Ruby Course Session 4
 
-Session Outline:
+Session Outline
 - Recap
 - Upgrading our Ruby version
 - Arrays
