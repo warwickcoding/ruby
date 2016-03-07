@@ -151,13 +151,72 @@ end
 
 If we switch around the lines in the expression to have the `first_name` as the last line in the method, our condition will pass and thus return `"Hello Finn!"`. This example was used to purely demonstrate how the last line is being returned in methods.
 
+Methods and variables
+---------------------
+When dealing with methods, we will come across loads of variables inside and outside these functions. By taking a look at the following snippet, can you decide what will be returned?
+Take a minute to think about this before you decide 😀
+
+```ruby
+def name
+  first_name = "Huckleberry"
+  last_name = "Finn"
+  age = 13
+end
+
+puts first_name
+puts name.last_name
+puts age + 12
+```
+
+This is where it gets interesting and probably confusing, so don't worry if this takes some time to sink in. There are different scope levels when talking about variables, for now the only one we should be concerned with is the "local variable". Local variables are accessible only inside the defined space. In the case of methods, this means that "normal variables" that are **only** defined inside a certain method cannot be accessed outside it. What do we mean by a normal variable?
+
+```ruby
+# Normal/Local Variable:
+name = "Jimmy"
+
+# Instance Variable
+@name = "Jimmy"
+
+# Class Variable
+@@name = "Jimmy"
+
+# Global Variable
+$name = "Jimmy"
+
+# Constants
+NAME = "Jimmy"
+```
+
+Local variables are the variable type that we have been dealing with so far. Don't worry about the other types for now, but feel free to read more about them [here](http://www.tutorialspoint.com/ruby/ruby_variables.htm).
+
+Going back to the previous example, when we call on a local variable that is defined outside our scope, we will get the following error: `undefined local variable or method`. This gives us a hint, that we are calling on something that is currently not accessible to us, even if we did define it elsewhere.
+
+Here is another example that will aim to illustrate the different levels of scope:
+
+```ruby
+age = 98
+
+def my_vars(age)
+  age = 77
+  puts age
+end
+
+my_vars(age)
+# => 77
+puts age
+# => 98
+```
+
+So you can see that our original variable was not changed, even though we did something to it inside the method. Think about similar cases as having two different variables rather than one.
+
 Methods and Loops
 -----------------
 
 
 Multiple Arguments
 ------------------
-W
+
+
 ### Two or more args
 
 ### Wildcard
