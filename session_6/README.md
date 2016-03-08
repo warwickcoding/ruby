@@ -356,7 +356,7 @@ end
 ```
 
 ### Exercise 5
-Write a method called `ask` which will ask a user questions and program will then display messages corresponding to the users answer.
+Write a method called `ask` which will ask a user questions and the program will then display messages corresponding to the users answer.
 
 Your questions should be inside the method, for example: "Do you like coffee?", and depending on the users answer to that question, you can display a message.
 
