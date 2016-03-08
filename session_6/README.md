@@ -386,4 +386,4 @@ Recreate the arithmetic in Ruby: `+-*/` as new methods where you can pass in 2 n
 
 ### Exercise 7
 Using the the methods you created from Ex 6 and extend them to accept multiple inputs, through a splat operator `*`. Revisit the section above if you need to.
-As a hint, look up the `inject` method for arrays. :)
+As a hint, look up the `inject` method for Enumerables. :)
