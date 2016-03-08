@@ -209,9 +209,6 @@ puts age
 
 So you can see that our original variable was not changed, even though we did something to it inside the method. Think about similar cases as having two different variables rather than one.
 
-Methods and Loops
------------------
-
 
 Multiple Arguments
 ------------------
@@ -236,7 +233,7 @@ add('ab', 'cd')
 ### Splat Operator
 Placing a splat operator `*` infront of a argument name means that this will take on an undefined number of arguments. This could be useful when we are expecting an unknown number of inputs to the method. A good example would be applying some calculations to incoming weather reports.
 
-**NOTE**: When you pass in arguments to a method with a splat, these arguments are stored in an array! Think about that next time you want to manipulate the data 
+**NOTE**: When you pass in arguments to a method with a splat, these arguments are stored in an array! Think about that next time you want to manipulate the data
 
 ```ruby
 def avg_temp(*temps)
