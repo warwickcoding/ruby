@@ -242,7 +242,7 @@ def avg_temp(*temps)
     sum += temp
   end
 
-  sum
+  sum/temps.length
 end
 
 avg_temp(1, 2, 9)
@@ -340,7 +340,7 @@ Compare the following examples and decide if they are valid or invalid:
 ```ruby
 # example 1
 def add(abcdef + yeah)
- abcdef + yeah 
+ abcdef + yeah
 end
 
 # example 2
@@ -357,6 +357,29 @@ end
 
 ### Exercise 5
 Write a method called `ask` which will ask a user questions and program will then display messages corresponding to the users answer.
+
+Your questions should be inside the method, for example: "Do you like coffee?", and depending on the users answer to that question, you can display a message.
+
+Place at least one of your questions inside a loop so that the user will keep getting asked the same questions until they answer yes or no.
+
+```ruby
+def blabla
+
+  while ....
+    puts "aksdkajsdla"
+    user_input = .....
+  end
+
+  puts "alskdja"
+  user_answer = ....
+
+  if user_answer == ....
+    puts "asdasd"
+  end
+
+  puts "Thank you for answering the questions :)"
+end
+```
 
 ### Exercise 6
 Recreate the arithmetic in Ruby: `+-*/` as new methods where you can pass in 2 numbers and the result is outputed
