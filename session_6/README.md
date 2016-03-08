@@ -22,7 +22,7 @@ Remembering Methods
 -------------------
 If we remember from the previous sessions, methods have been used quite a lot. So far, we have been using methods that belong to certain classes provided by the core Ruby language.
 
-Methods are Ruby's functions. Their job is to send a message to another object and this message can perform other functions, collect data or even produce some output. There are so many different thing we can to with a method. The following list contains a few of the methods we have come across so far.
+Methods are Ruby's functions. Their job is to send a message to another object and this message can perform other functions, collect data or even produce some output. There are so many different things we can do with a method. The following list contains a few of the methods we have come across so far.
 
 - `to_s`
 - `+`
@@ -85,7 +85,7 @@ After that, we can start writing our method from the inside.
 
 ```ruby
 def hello(name)
-  puts "Hello {name}"
+  puts "Hello #{name}"
 end
 ```
 
@@ -215,13 +215,60 @@ Methods and Loops
 
 Multiple Arguments
 ------------------
-
+So far we have been creating methods that accept one argument only. This is not a general rule, methods can accept as many arguments that we set out.
+It is also important to note that in Ruby, the data type of the argument doesn't have to specified at the top level. This is something that Ruby handles on its own. In other words, we don't have to specify that a certain argument input is going to be a string or integer.
 
 ### Two or more args
+Let's take an example in which we want to add two numbers to each other:
 
-### Wildcard
+```ruby
+def add(num1, num2)
+  num1 + num2
+end
+
+add(1, 9)
+# => 10
+
+add('ab', 'cd')
+# => 'abcd'
+```
+
+### Splat Operator
+Placing a splat operator `*` infront of a argument name means that this will take on an undefined number of arguments. This could be useful when we are expecting an unknown number of inputs to the method. A good example would be applying some calculations to incoming weather reports.
+
+**NOTE**: When you pass in arguments to a method with a splat, these arguments are stored in an array! Think about that next time you want to manipulate the data 
+
+```ruby
+def avg_temp(*temps)
+  sum = 0
+  temps.map |temp| do
+    sum += temp
+  end
+
+  sum
+end
+
+avg_temp(1, 2, 9)
+# => 12
+
+avg_temp(32, 7, 1, 18)
+# => 58
+```
 
 ### Default Values
+Sometimes, we want to place a specific value to unused arguments. This could apply in an example where we provide an option to enter values, otherwise our preset values will take place.
+
+```ruby
+def favourite_colour(colour="Blue")
+  puts "Your favourite colour is #{colour}"
+end
+
+favourite_colour()
+# => Blue
+
+favourite_colour("Red")
+# => Red
+```
 
 Method errors
 -------------
@@ -241,10 +288,82 @@ Exercises
 ### Exercise 1
 Write a method that will take in a number and return the square only if it is even. If it is odd, return a message of your choice
 
+<!--
+SOLUTION:
+```ruby
+  def square(num)
+    squared = num**2
+    if squared.even?
+      return squared
+    else
+      puts "This number is not even, #{squared}"
+    end
+  end
+```
+
+-->
+
 ### Exercise 2
+You must take the following method and write the underlying logic to allow it to tell us if a string is upcase or not.
+
+```ruby
+def str_upcase?(string)
+  .....
+  .....
+end
+```
+
+<!--
+
+SOLUTION:
+```ruby
+def str_upcase?(string)
+  if string == string.upcase
+    true
+  else
+    false
+  end
+end
+```
+
+-->
 
 ### Exercise 3
+Write a method that will take in an argument and then display that to the user reverse and capitalized.
+So for example:
+```ruby
+"name" => "Eman"
+"Bond" => "Donb"
+"CARS" => "Srac"
+```
 
 ### Exercise 4
+Compare the following examples and decide if they are valid or invalid:
+
+```ruby
+# example 1
+def add(abcdef + yeah)
+ abcdef + yeah 
+end
+
+# example 2
+def show_name (name)
+  puts "Your name is #{name}"
+end
+
+# example 3
+def personal_information name, age, nationality, height
+  # bla bla bla
+end
+
+```
 
 ### Exercise 5
+Write a method called `ask` which will ask a user questions and program will then display messages corresponding to the users answer.
+
+### Exercise 6
+Recreate the arithmetic in Ruby: `+-*/` as new methods where you can pass in 2 numbers and the result is outputed
+
+### Exercise 7
+Using the the methods you created from Ex 6 and extend them to accept multiple inputs, through a splat operator `*`. Revisit the section above if you need to.
+As a hint, look up the `inject` method for arrays. :)
