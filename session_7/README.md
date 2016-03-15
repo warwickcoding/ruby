@@ -130,6 +130,115 @@ end
 
 As we can see, there are many ways to do the same thing in Ruby.
 
+Creating our own Classes
+------------------------
+Everything in Ruby is modifiable, this includes classes. So we can create our own classes and make use of them.
+Let's say we need to use an object that does not yet exist in Ruby, we would go about creating a class for it!
+
+Let's assume we have a virtual car that we can drive around and eventually park. We can break down our requirements into verbs and nouns, and since methods are messages, they will closely resemble a verb (something is being done).
+
+So we can take two verbs from our car example: drive and park.
+
+```ruby
+def drive
+  "Car is driving"
+end
+
+def park
+  "Car is parked"
+end
+```
+
+So we now have to basic methods that output a string that simply informs us what the car is doing. This is where a class would come in to capture all this behaviour in one place and allow these methods to belong to a larger object.
+
+To create our class:
+
+```ruby
+class Car
+end
+```
+
+Notice that we capitalize the class name, unlike in methods, and if we have more than one word, it would take on this format:
+`class FastCar`
+
+So, after we declare our class, let's throw in the methods.
+
+```ruby
+class Car
+  def drive
+  end
+
+  def park
+  end
+end
+```
+
+Now that we have our methods, let's think about how we can make them send meaningful messages as objects. This is where we will start using instance variables. Remember them from last time? These are variables that last as long as the object does. So, when we instantiate a new object from the Car class, the instance variable in this new object will last until we close the program. Unlike local variables that last as long as the method itself.
+
+So just a recap on instance method syntax:
+
+```ruby
+@status = "This is a string"
+@status = 123
+```
+
+They are variables at the end of the day so don't get confused :)
+
+Going back to our Car class, lets add some instance variables so that we can get the status of the car:
+
+```ruby
+class Car
+  def drive
+    @status = "Driving"
+  end
+
+  def park
+    @status = "Parked"
+  end
+
+  def status
+    @status
+  end
+end
+```
+
+Any idea what we did here? Take a few and let me know what you think.
+
+Also, how would be able to test this out in `irb`?
+
+### Using `irb` to test our class.
+Say we have a file named `car.rb` inside our current directory and we want to see how we can use the methods of this new class as an external part of our Ruby language.
+
+This is where `require` comes into play!
+
+You would have to fire up `irb` and then type in: `require "./car.rb"`.
+Any idea what this command resembles?
+
+After we required the file that contains the new class, we can now play around with it in `irb`. However, we still need to create a new instance of the class like so:
+
+```ruby
+:001 > require './car.rb'
+ => true
+:002 > car = Car.new
+  => #<Car:0x007ff99aa52c10>
+```
+
+So we now have a new object that we can talk to.
+
+```ruby
+:003 > car.status
+  => nil
+```
+
+As you can see we called the method `status` but it returned `nil`. Any idea why?
+
+Spend a few minutes playing with this class until you fully understand what is happening.
+
+*Hint*: To view the class' methods, use the `method` method to show you the available ones :P
+Usually, the ones that were most recently created will be displayed first!
+
+
+
 Exercises
 ---------
 
@@ -142,4 +251,9 @@ day/month/year hour:minute:second timezone
 
 ### Exercise 2
 Assuming you were born on midnight, find how old you are in terms of seconds, using the `Time` class.
+
+### Exercise 3
+Build a class called `Die` that has the required behaviour of rolling dice and showing a score at the end. Remember the dice rolls have to be random!
+
+### Exercise 4
 
