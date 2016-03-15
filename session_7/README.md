@@ -237,7 +237,35 @@ Spend a few minutes playing with this class until you fully understand what is h
 *Hint*: To view the class' methods, use the `method` method to show you the available ones :P
 Usually, the ones that were most recently created will be displayed first!
 
+### Initialize your engines
+Sure all is this is fun. But this still doesn't make sense to have a car that is neither parked nor driving when we first create it! Common sense would be to have a car that is parked when created, correct?
 
+That's where the `initialize` methods comes in. This is a built in method that comes with every class. It allows us to add behaviour to a certain class when it is created. As an example, let's see how this may apply to our car class.
+
+```ruby
+class Car
+  def initialize
+    @status = "Parked"
+  end
+
+  def drive
+    @status = "Driving"
+  end
+
+  def park
+    @status = "Parked"
+  end
+
+  def status
+    @status
+  end
+end
+
+```
+
+If you exit your previous `irb` session and start a new one, require the file again and then create a new Car object, you should see something new. Share with us what you find.
+
+Also try to find the difference between `new` and `initialize`.
 
 Exercises
 ---------
@@ -256,4 +284,13 @@ Assuming you were born on midnight, find how old you are in terms of seconds, us
 Build a class called `Die` that has the required behaviour of rolling dice and showing a score at the end. Remember the dice rolls have to be random!
 
 ### Exercise 4
+Remember Pokemon? We're going to create a new game that is called RubyMons (short for Ruby Monsters). In order to play this game properly, our RubyMons should have the following:
+- have names
+- can sleep
+- can eat
+- can walk
+
+### Exercise 5
+Let's extend our RubyMons to be able to fight each other. In doing so, they will have to have a "strength" rating.
+This is where it gets challenging; try to find out how we can get these RubyMon to fight and then find out who won at the end of the battle!
 
