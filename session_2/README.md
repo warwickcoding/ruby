@@ -92,7 +92,7 @@ age.odd?    # => true
 
 Data types in Ruby
 ------------------
-In Ruby, there are a number of different data types. 
+In Ruby, there are a number of different data types.
 A data type is a set of values, and the allowable operations on those values. These data types are very important building blocks to the language. They are used to distinguish between the different uses that you might need your program to perform. For example, when dealing with a function in a spreadsheet, you will not be able to mix letters where you are supposed to use numbers, and for that purpose you have to find the appropriate data type to solve the issue. We will clarify this in greater depth later on.
 
 The following list includes the important data types that you will come across in this course:
