@@ -9,7 +9,7 @@ Course Directory
 - [Session 5][5]
 - [Session 6][6]
 - [Session 7][7]
-- Session 8
+- [Session 8][8]
 
 
 [1]: /session_1
@@ -19,3 +19,4 @@ Course Directory
 [5]: /session_5
 [6]: /session_6
 [7]: /session_7
+[8]: /session_8
